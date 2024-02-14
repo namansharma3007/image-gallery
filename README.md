@@ -44,3 +44,5 @@ Open your browser and visit http://localhost:3000 to view the application.
 * Vite
 * Firebase (Authentication, Storage)
 * Tailwind css
+* Daisyui (For UI)
+* UUID (For uniqe image name)
