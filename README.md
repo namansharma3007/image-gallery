@@ -43,3 +43,4 @@ Open your browser and visit http://localhost:3000 to view the application.
 ## Dependencies
 * Vite
 * Firebase (Authentication, Storage)
+* Tailwind css
