@@ -13,7 +13,7 @@ const Navbar = () => {
   }
   return (
     <div className="navbar flex justify-between px-10">
-      <a className="font-bold normal-case text-xl">GalaryPro📷</a>
+      <a className="font-bold normal-case text-xl" rel='noopener noreferrer'>GalaryPro📷</a>
       <button onClick={handleLogout}>Logout</button>
     </div>
   );
