@@ -1,20 +1,34 @@
 import { signOut } from "firebase/auth";
-import {auth} from '../firebase/config'
+import { auth } from "../firebase/config";
 import React from "react";
+import { useAuth } from "../hooks/useAuth";
 
 const Navbar = () => {
-
-  const handleLogout = async ()=>{
-    try{
+  const { user } = useAuth();
+  const handleLogout = async () => {
+    try {
       await signOut(auth);
-    } catch(error){
+    } catch (error) {
       console.error(error.message);
     }
-  }
+  };
   return (
     <div className="navbar flex justify-between px-10">
-      <a className="font-bold normal-case text-xl" rel='noopener noreferrer'>GalaryPro📷</a>
-      <button onClick={handleLogout}>Logout</button>
+      <span
+        className="font-bold normal-case text-2xl"
+        rel="noopener noreferrer"
+      >
+        GalaryPro📷
+      </span>
+      <div>
+        {user && <span className="text-sm">{user.email}</span>}
+        <button
+          className="btn btn-active btn-link text-sm"
+          onClick={handleLogout}
+        >
+          Logout
+        </button>
+      </div>
     </div>
   );
 };
