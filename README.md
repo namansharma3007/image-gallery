@@ -13,7 +13,7 @@ To run Image Pro Gallery locally, follow these steps:
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/image-pro-gallery.git
+git clone https://github.com/namansharma3007/image-gallery.git
 ```
 
 2. Navigate into the project directory:
