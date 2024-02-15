@@ -29,13 +29,13 @@ const Signup = () => {
           setError(null);
           navigate("/");
         } else {
-          setError("Password and confirm password do not match");
+          setError("Password and confirm password do not match!");
         }
       } else {
-        setError("Email already in use");
+        setError("Email already in use!");
       }
     } catch (error) {
-      setError("Email already in use");
+      setError("Email already in use!");
     }
   };
 

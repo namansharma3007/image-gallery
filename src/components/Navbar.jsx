@@ -18,7 +18,7 @@ const Navbar = () => {
         className="font-bold normal-case text-2xl"
         rel="noopener noreferrer"
       >
-        GalaryPro📷
+        ImagePro📷
       </span>
       <div>
         {user && <span className="text-sm">{user.email}</span>}
